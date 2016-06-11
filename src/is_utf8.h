@@ -55,7 +55,7 @@ SUCH DAMAGE.*/
   -----------------------------------------------------------------------------
 
 */
-static int _is_utf8(unsigned char *str, mrb_int len)
+static mrb_int _is_utf8(unsigned char *str, mrb_int len)
 {
     mrb_int i = 0;
 
