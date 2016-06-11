@@ -1,14 +1,10 @@
 #include "is_utf8.h"
 #include <mruby/string_is_utf8.h>
 
-MRB_API mrb_value
+MRB_API mrb_bool
 mrb_string_is_utf8(mrb_value str)
 {
-  if (_is_utf8((unsigned char *) RSTRING_PTR(str), RSTRING_LEN(str)) == 0) {
-    return mrb_true_value();
-  } else {
-    return mrb_false_value();
-  }
+  return _is_utf8((unsigned char *) RSTRING_PTR(str), RSTRING_LEN(str)) == 0 ? TRUE : FALSE;
 }
 
 MRB_API mrb_int
@@ -20,7 +16,7 @@ mrb_string_is_utf8_raw(mrb_value str)
 static mrb_value
 mrb_str_is_utf8(mrb_state *mrb, mrb_value self)
 {
-  return mrb_string_is_utf8(self);
+  return mrb_bool_value(mrb_string_is_utf8(self));
 }
 
 static mrb_value
