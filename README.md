@@ -14,7 +14,7 @@ Ruby Example
 C Example
 =========
 ```c
-str = mrb_str_new_lit(mrb, "hallo");
+mrb_value str = mrb_str_new_lit(mrb, "hallo");
 
 mrb_string_is_utf8(str); // returns TRUE or FALSE
 
