@@ -4,7 +4,7 @@
 #include <mruby.h>
 #include <mruby/string.h>
 
-MRB_API mrb_bool mrb_string_is_utf8(mrb_value str);
-MRB_API mrb_int mrb_string_is_utf8_raw(mrb_value str);
+MRB_API mrb_bool mrb_str_is_utf8(mrb_value str);
+MRB_API mrb_int mrb_str_is_utf8_raw(mrb_value str);
 
 #endif
