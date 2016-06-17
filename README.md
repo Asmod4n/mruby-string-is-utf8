@@ -5,7 +5,7 @@ Checks if a string is valid utf8
 Ruby Example
 ============
 ```ruby
-"hallo".is_utf? # returns true or false
+"hallo".is_utf8? # returns true or false
 
 "hallo".is_utf8_raw # returns 0 if true or the position where a offending char is found
 ```
