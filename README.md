@@ -20,3 +20,7 @@ mrb_str_is_utf8(str); // returns TRUE or FALSE
 
 mrb_str_is_utf8_raw(str); // returns 0 if true or the position where a offending char is found
 ```
+
+Acknowledgements
+================
+This is using the single header version of simdutf from https://github.com/simdutf/simdutf

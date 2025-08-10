@@ -48,3 +48,7 @@ build-iPhoneSimulator/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+build_config.rb.lock
+/.ccls-cache/
+/mruby/
+compile_commands.json
